@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3389049 */
+  src: url('iconfont.woff2?t=1652506764694') format('woff2'),
+       url('iconfont.woff?t=1652506764694') format('woff'),
+       url('iconfont.ttf?t=1652506764694') format('truetype'),
+       url('iconfont.svg?t=1652506764694#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sidebar_ic_top:before {
+  content: "\e617";
+}
+
+.icon-sidebar_ic_manifesto:before {
+  content: "\e618";
+}
+
+.icon-sidebar_ic_sign:before {
+  content: "\e615";
+}
+
+.icon-ic_close:before {
+  content: "\e614";
+}
+
+.icon-nav_ic_tw:before {
+  content: "\e613";
+}
+
+.icon-nav_ic_discord:before {
+  content: "\e611";
+}
+

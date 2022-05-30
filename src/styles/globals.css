@@ -1,0 +1,120 @@
+html,
+body {
+    padding: 0 !important;
+    margin: 0;
+    font-family: Arial -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    font-family: Arial;
+}
+
+.club_title {
+    color: #C41A1F;
+    font-size: 22px;
+    font-family: Arial-Bold, Arial;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+.ellipsis-line{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.icon-ic_close {
+    z-index: 1;
+    position: absolute;
+    font-size: 22px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.icon-ic_close:hover {
+    color: #C41A1F;
+}
+
+/* Modal */
+/* ManifestoScroll */
+.ManifestoScroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.ManifestoScroll::-webkit-scrollbar-thumb {
+    background-color: #c51925;
+    border:1px solid #000;
+    border-radius:10px;
+    /* background-image: url('/images/roller.svg'); */
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.sidebar_box {
+    animation: sidebarBoxAnimation 3s;
+}
+
+@keyframes sidebarBoxAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* chakraUi style */
+.chakra-modal__content-container {
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.chakra-modal__overlay {
+    background: #000;
+    opacity: 0.4 !important;
+}
+.chakra-spinner{
+    width: 20px;
+    height: 20px;
+    color:#fff;
+}
+
+.my_tootip_Manifesto_css {
+    font-weight: 700;
+    font-family: Arial-Bold, Arial;
+    color: #fff;
+    top: -50px;
+}
+
+.my_tootip_css:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid #000;
+    position: absolute;
+    top: -8px;
+    left: 45%;
+}
+
+.my_tootip_css {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-size: 12px;
+}

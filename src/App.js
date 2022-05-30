@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/index"
+import { ChakraProvider } from "@chakra-ui/react"
+import React, {useEffect, useState} from "react";
+import { IntlProvider } from 'react-intl';
+import localMessages from './locale/index';
 
 function App() {
+    const [currentLocale, setCurrentLocale] = useState('en-US');
+    const handlelanguage = function (value) {
+        setCurrentLocale(value)
+    }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <IntlProvider locale={currentLocale} messages={localMessages[currentLocale]}>
+          <ChakraProvider>
+              <Home
+                  handlelanguage={handlelanguage}
+              />
+          </ChakraProvider>
+      </IntlProvider>
   );
 }
 
